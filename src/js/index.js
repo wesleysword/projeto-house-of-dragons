@@ -38,6 +38,11 @@ botoesCarrossel.forEach((botao, indice) => {
     })
 })
 
+function desativarBotaoSelecionado() {
+    const botaoSelecionado = document.querySelector(".selecionado");
+    botaoSelecionado.classList.remove("selecionado");
+}
+
 function mostrarInformacoes(indice) {
     informacoes[indice].classList.add("ativa");
 }
@@ -60,8 +65,4 @@ function esconderImagemAtiva() {
     imagemAtiva.classList.remove("ativa");
 }
 
-function desativarBotaoSelecionado() {
-    const botaoSelecionado = document.querySelector(".selecionado");
-    botaoSelecionado.classList.remove("selecionao");
-}
 
